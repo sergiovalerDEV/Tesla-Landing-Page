@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del Navbar */
+#desktop-navbar {
+    background-color: rgba(255, 255, 255); 
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    transition: background-color 0.3s ease; 
+}
+
+
+/* Configuración para los popups */
+.popup {
+    z-index: 100; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto; 
+    background-color: rgba(255, 255, 255, 1); 
+    color: black;
+    display: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    transform: translateY(-100%); 
+    opacity: 0;
+}
+
+
+#desktop-navbar-menu-vehiculos-popup {
+    display: flex;
+    padding-top: 10vh;
+    width: 120px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+
+#desktop-navbar-logo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+#desktop-navbar-logo img {
+    width: 15%; 
+    height: 100%;
+    margin-left: 5%;
+}
+
+#desktop-navbar-menu {
+    width: 20%;
+    height: 100%;
+}
+
+#desktop-navbar-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+#desktop-navbar-menu li {
+    font-family: 'Open Sans', sans-serif; 
+    text-decoration: none;
+    padding: 8px; 
+}
+
+#desktop-navbar-menu li:hover {
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#desktop-navbar-menu a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 14px; 
+    color: black;
+    font-weight: bold;
+}
+
+#desktop-navbar-buttons {    
+    display: flex; 
+    justify-content: flex-end;  
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+#desktop-navbar-buttons img {
+    width: 15%; 
+    height: 100%;
+    margin-right: 5%; 
+}
+
+#desktop-navbar-buttons-container {
+    width: 20%;
+    height: 100%;
+}
+
+
+/*ESTILOS DE LOS POPUPS QUE SE ABREN PARA DESKTOP*/
+/*POPUP 1*/
+
+/*POPUP 2*/
+
+/*POPUP 3*/
+
+/*POPUP 4*/
+
+/*POPUP 5*/
+
+/* Imagen para pantallas hasta 920px */
+@media (min-width: 0px) and (max-width: 480px) {
+    /* Estilos específicos para móviles pequeños */
+    
+}
+
+@media (min-width: 481px) and (max-width: 654px) {
+    /* Estilos específicos para móviles medianos */
+    
+
+}
+
+@media (min-width: 654px) and (max-width: 768px) {
+    /* Estilos específicos para tabletas en orientación vertical */
+    
+   
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas en orientación horizontal */
+   
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Estilos específicos para computadoras de escritorio pequeñas y grandes tabletas */
+    
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    /* Estilos específicos para computadoras de escritorio medianas a grandes */
+   
+    
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    /* Estilos específicos para pantallas grandes */
+   
+}
+
+@media (min-width: 1921px) {
+    /* Estilos específicos para monitores de alta resolución */
+   
+}

@@ -1,0 +1,206 @@
+.footer {
+    width: 100vw; 
+    box-sizing: border-box; 
+    background-color: black;
+}
+
+.highlight {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-long-text {
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    padding: 20px 0; 
+    box-sizing: border-box; 
+}
+
+.footer-long-text p {
+    max-width: 35vw; 
+    width: 100%; 
+    margin: 0; 
+    font-size: 14px; 
+    line-height: 1.6; 
+    color: #afb0b1; 
+    text-align: center;
+}
+
+.footer-last-line {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    padding: 10px 0; 
+    box-sizing: border-box; 
+}
+
+.footer-last-line ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    gap: 15px; 
+    width: 40vw; 
+    justify-content: center;
+}
+
+.footer-last-line li {
+    font-size: 14px; 
+    color: #ffffff; 
+    cursor: pointer;
+}
+
+
+/* Imagen para pantallas hasta 920px */
+@media (min-width: 0px) and (max-width: 480px) {
+    /* Estilos específicos para móviles pequeños */
+    .footer p{
+        max-width:79vw;
+    }
+
+    .footer-last-line{
+        border-top: 0.01px solid #afb0b1;
+    }
+    .footer-last-line ul {
+        flex-direction: column;
+        gap: 15px;         
+        width: 40vw;      
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .footer-last-line li {
+        font-size: 14px;  
+        color: #ffffff;    
+        cursor: pointer; 
+    }
+   
+}
+
+@media (min-width: 481px) and (max-width: 654px) {
+    /* Estilos específicos para móviles medianos */
+    .footer p{
+        max-width:79vw;
+    }
+
+    .footer-last-line{
+        border-top: 0.01px solid #afb0b1;
+    }
+    .footer-last-line ul {
+        flex-direction: column;
+        gap: 15px;         
+        width: 40vw;      
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .footer-last-line li {
+        font-size: 14px;  
+        color: #ffffff;    
+        cursor: pointer; 
+    }
+   
+}
+
+@media (min-width: 654px) and (max-width: 768px) {
+    /* Estilos específicos para tabletas en orientación vertical */
+    .footer p{
+        max-width:79vw;
+    }
+
+    .footer-last-line{
+        border-top: 0.01px solid #afb0b1;
+    }
+    .footer-last-line ul {
+        flex-direction: column;
+        gap: 15px;         
+        width: 40vw;      
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .footer-last-line li {
+        font-size: 14px;  
+        color: #ffffff;    
+        cursor: pointer; 
+    }
+   
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas en orientación horizontal */
+    .footer p{
+        max-width:79vw;
+    }
+
+    .footer-last-line{
+        border-top: 0.01px solid #afb0b1;
+    }
+    .footer-last-line ul {
+        flex-direction: column;
+        gap: 15px;         
+        width: 40vw;      
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .footer-last-line li {
+        font-size: 14px;  
+        color: #ffffff;    
+        cursor: pointer; 
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Estilos específicos para computadoras de escritorio pequeñas y grandes tabletas */
+
+    .footer-last-line{
+        border-top: 0.01px solid #afb0b1;
+    }
+    .footer-last-line ul {
+        flex-direction: column;
+        gap: 15px;         
+        width: 40vw;      
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .footer-last-line li {
+        font-size: 14px;  
+        color: #ffffff;    
+        cursor: pointer; 
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    /* Estilos específicos para computadoras de escritorio medianas a grandes */ 
+    
+    .footer-last-line{
+        border-top: 0.01px solid #afb0b1;
+    }
+    .footer-last-line ul {
+        flex-direction: column;
+        gap: 15px;         
+        width: 40vw;      
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .footer-last-line li {
+        font-size: 14px;  
+        color: #ffffff;    
+        cursor: pointer; 
+    }
+    
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    /* Estilos específicos para pantallas grandes */
+}
+
+@media (min-width: 1921px) {
+    /* Estilos específicos para monitores de alta resolución */
+   
+}

@@ -1,0 +1,417 @@
+#coche-1 {
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden;
+}
+
+
+#coche-1 img {
+    width: 100%;
+    height: 110vh;
+}
+
+#car-1-info {
+    width: 90vw;
+    height: auto; 
+    display: block;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    line-height: 50px;
+}
+
+#car-1-info h1{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+#car-1-info h3{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1px;
+
+}
+
+#car-1-info p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    color: rgb(90, 89, 89);
+}
+
+.car-buttons {
+    position: absolute;
+    bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Open Sans';
+}
+
+.car-buttons p{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#car-buttons-1{
+    color: #FFF;
+    background-color: #222222;
+    transition: 0.4s ease;
+}
+
+#car-buttons-2{
+    background-color: #FFFFFF;
+    transition: 0.4s ease;
+    color: #393C41;
+}
+
+#car-buttons-1:hover{
+    background-color: #393C41;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+#car-buttons-2:hover{
+    background-color: #D1CFCB;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.button-row p {
+    flex: 1;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    max-width: 200px;
+}
+
+#car-button-moves {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#car-button-moves {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#car-button-moves:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Imagen para pantallas hasta 920px */
+@media (min-width: 0px) and (max-width: 480px) {
+
+   body{
+    overflow-x: hidden;
+   }
+    /* Estilos específicos para móviles pequeños */
+    /*#coche-1 img {
+        width: 100vw;
+        justify-content: center;
+        height: 130%;
+        object-fit: cover;
+    }*/
+
+
+    #coche-1 img {
+        width: 100vw;
+        height: 110%;
+        object-fit: cover;
+    }
+
+    #coche-1 video{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .special-large-img img{
+        display: none;
+    }
+    
+    .car-buttons {
+        position: absolute;
+        bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-family: 'Open Sans';
+    }
+    
+    .car-buttons p {
+        font-family: 'Open Sans';
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+        max-width: 90%; /* Asegura que ocupe todo el ancho */
+        padding: 12px;
+        box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.4s ease;
+    }
+    
+    .button-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #car-button-moves {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    #car-button-moves:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 654px) {
+    /* Estilos específicos para móviles medianos */
+
+    body{
+        overflow-x: hidden;
+       }
+   
+    #coche-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #car-1-info h1{
+        font-size: 30px;
+    }
+
+    #car-1-info h3{
+        font-size: 22px;
+    }
+
+    .car-buttons {
+        position: absolute;
+        bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-family: 'Open Sans';
+    }
+    
+    .car-buttons p {
+        font-family: 'Open Sans';
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+        max-width: 90%; /* Asegura que ocupe todo el ancho */
+        padding: 12px;
+        box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.4s ease;
+    }
+    
+    .button-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #car-button-moves {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    #car-button-moves:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 654px) and (max-width: 768px) {
+    /* Estilos específicos para tabletas en orientación vertical */
+
+    body{
+        overflow-x: hidden;
+       }
+    
+       #coche-1 {
+        width: 100vw;
+        height: 100vh;
+       }
+    #coche-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    #car-1-info h1{
+        font-size: 30px;
+    }
+
+    #car-1-info h3{
+        font-size: 22px;
+    }
+
+    .car-buttons {
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Open Sans';
+}
+
+.car-buttons p {
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 90%; /* Asegura que ocupe todo el ancho */
+    padding: 12px;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#car-button-moves {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#car-button-moves:hover {
+    text-decoration: underline;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas en orientación horizontal */
+
+    body{
+        overflow-x: hidden;
+       }
+
+       #coche-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+      
+
+    .img-large-modified img {
+        object-fit: fill;
+        width: 150vw;
+    }
+
+
+    #car-1-info h1{
+        font-size: 30px;
+    }
+
+    #car-1-info h3{
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Estilos específicos para computadoras de escritorio pequeñas y grandes tabletas */
+
+    body{
+        overflow-x: hidden;
+       }
+
+    #coche-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    /* Estilos específicos para computadoras de escritorio medianas a grandes */
+
+    body{
+        overflow-x: hidden;
+       }
+
+    #coche-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: con;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    /* Estilos específicos para pantallas grandes */
+
+    body{
+        overflow-x: hidden;
+       }
+
+    #coche-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1921px) {
+    /* Estilos específicos para monitores de alta resolución */
+
+    body{
+        overflow-x: hidden;
+       }
+
+    #coche-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*@media solamente para la segunda fotografía, para que no se desproporcione en ciertas resoluciones*/
+@media (min-width: 650px) {
+    #coche-1 .second-image {
+        content: url('../img/FOTO2-MOBILE.jpg'); /* Cambia esta ruta a la imagen de fondo que quieres usar para pantallas grandes */
+    }
+}

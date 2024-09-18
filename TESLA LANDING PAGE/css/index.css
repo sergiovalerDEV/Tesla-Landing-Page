@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/Universal-Sans-Display-450-Trial.ttf') format('truetype');
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
